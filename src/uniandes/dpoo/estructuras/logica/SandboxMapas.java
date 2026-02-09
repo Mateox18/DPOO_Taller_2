@@ -191,11 +191,13 @@ public class SandboxMapas
     	if (mapaCadenas.isEmpty())
     		return;
     	HashMap<String, String> copia = new HashMap<>();
+    	// Mete en copia las mismas cadenas pero en mayusculas.
     	for(String key : mapaCadenas.keySet()) {
     		String valor = mapaCadenas.get(key);
     		String mayus = key.toUpperCase();
     		copia.put(mayus, valor);
     	}
+    	// Actualiza mapaCadenas.
     	mapaCadenas = copia;
     }
 
